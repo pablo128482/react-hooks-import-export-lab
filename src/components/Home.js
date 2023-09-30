@@ -1,11 +1,15 @@
 import React from "react";
+import {username} from'../data/user';
+import {city} from '../data/user';
 
-function Home() {
+const Home = () => {
   return (
-    <div id="home">
-      <h1>
-        {username} is a Web Developer from {city}
-      </h1>
+    <div>
+      <h1>Welcome, {username}</h1>
+      <p>City: {city}</p>
+      {/* Your Home component code */}
     </div>
   );
-}
+};
+
+export default Home;
